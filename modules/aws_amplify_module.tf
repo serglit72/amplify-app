@@ -4,13 +4,13 @@ resource "aws_amplify_app" "amplify_app" {
   oauth_token = var.token  
 }
 
-resource "aws_amplify_branch" "main" {
+resource "aws_amplify_branch" "amplify_branch" {
   app_id      = aws_amplify_app.amplify_app.id
   branch_name = var.branch_name
 }
 
-# resource "aws_amplify_webhook" "master" {
-#   app_id      = aws_amplify_app.example.id
+# resource "aws_amplify_webhook" "main" {
+#   app_id      = aws_amplify_app.amplify_app.id
 #   branch_name = aws_amplify_branch.main.branch_name
 #   description = "triggermaster"
 # }

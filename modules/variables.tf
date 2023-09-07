@@ -1,7 +1,7 @@
 variable "token" {
   type        = string
   description = "github token to connect github repo"
-  default     = "Your Gitub Token"
+  default     = "${{ secrets.AMPLIFY_TOKEN }}"
 }
 
 variable "repository" {
@@ -25,6 +25,6 @@ variable "branch_name" {
 
 variable "domain_name" {
   type        = string
-  default     = "awsamplifyapp.com"
-  description = "AWS Amplify Domain Name"
+  default     = "litovchenko.net"
+  description = "my own domain name"
 }
